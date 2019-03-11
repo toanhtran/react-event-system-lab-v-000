@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-class EyesOnMe extends React.Components {
-  constructor(){
-    super(props){
+class EyesOnMe extends React.Component {
+  onFocus = () => console.log('Good!')
 
-      render(){
-        return(
-          <button on
-        )
-      }
-    }
+  onBlur = () => console.log('Hey! Eyes on me!')
+
+  render() {
+    return (
+      <button onFocus={this.onFocus} onBlur={this.onBlur}>
+      Eyes on me, please!
+      </button>
+    )
   }
 }
 
